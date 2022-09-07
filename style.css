@@ -1,0 +1,129 @@
+/* 
+
+	Theme Name: Avanturist
+	Author:Anita Petrovic
+	Description:Tema
+	Version:1.0
+
+
+*/
+
+	
+	*{box-sizing:border-box;}
+	
+	body, .post-title{text-align:center;}
+	
+	body{background-color:#ecd9c6;
+		color:#402e17;
+		font-family:arial, sans-serif;		
+		margin:0;}  
+	
+	a{color:#422908;
+	  text-decoration:none;}
+	  
+	a:visited{color:#666666;}
+	
+	a:hover{color:yellow;}
+	
+	h1,h2,h3,h4,h5,h6,.nav-btn{font-family: 'Fredericka the Great', cursive;}
+	
+	img{max-width:100%;
+		height:auto;}
+	
+	video{max-width:100%;
+		width: 100vw;
+	    height: 50vh;
+		object-fit:cover;} 
+	
+	/*LAYOUT*******************/
+		
+	.grid{display:grid;
+		grid-gap:20px;}
+
+	.page-container{grid-template-rows:auto 1fr auto auto;
+					grid-template-columns: 1fr minmax(280px,1200px) 1fr;
+					height:100vh;}
+		
+	.page-header, .page-footer{grid-column:1/4;}
+	
+	.primary, .secondary{grid-column:2/3;}
+	
+	.content-columns{grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}	
+	
+	/*uređivanje elemenata stranice**************/
+	
+	.page-header,.page-footer{text-transform:uppercase;}
+	
+	.site-navigation, .page-footer{padding:10px;}
+	
+	.page-header{background: url(slike/pozadina.jpg) center top/cover no-repeat;}
+	
+	.site-navigation{background-color:rgba(236,217,198,0.72);}
+		
+		
+	.secondary ul, .site-navigation ul{list-style-type:none;
+									    margin:0;
+										padding:0;
+										line-height:200%;}
+									
+	.site-navigation ul{font-weight:bold;
+						display: grid;
+						grid-gap:2em;
+						grid-template-columns:repeat(auto-fit,minmax(150px,max-content));
+						justify-content:center;}
+						
+	.nav-btn{font-size:3em;
+			display:none;}
+			
+	.site-title{color:#685442;
+				font-size:8.333vw; /*160px/1920px*100=8.333vw*/
+				top:0.7em;}
+		
+	.page-title, .banner{grid-column:1/-1;}
+	
+	.post{background-color:rgba(255,255,255,0.65);
+		  padding:10px;}
+		
+	.onama-section{grid-column:span 2;}
+	
+	.kontakt{text-align:left;}
+	
+	.banner, .banner2, .posts, .site-title{position:relative;}
+	
+	.banner, .banner2{font-family: 'Dancing Script', cursive;
+					  color:white;
+					  font-weight:bold;
+					  font-size:2em;
+					  align-content:center;}
+	
+	.banner{bottom:320px;}
+	
+	.banner2{bottom:460px;}
+	
+	.posts{bottom:120px;}
+	
+	.eko{text-align:justify;}
+	
+	.kontakt-grid{grid-template-columns:1fr 1fr;}
+	
+	#ime-prezime, #mail, #tema, #poruka, #submit{width:100%;
+												margin:5px;
+												line-height:2em;}
+												
+												/*MEDIA QUERIES******************/
+	/**debugging nepostojećeg izbornika**/										
+	@media (min-width:769px) {
+		
+		.site-navigation ul{display:grid !important;}
+	}
+	
+	@media(max-width:768px){
+		
+		.site-navigation ul{grid-template-columns:repeat(1,1fr);
+		display:none;}
+		
+		.nav-btn{display:block;}
+		
+	}
+		 
+	

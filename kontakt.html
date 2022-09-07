@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="AnitaP">
+	
+    <title>Kontakt-AVANTURIST</title>
+	
+	<!--font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	
+	
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+	<!--font/end-->	
+	<link href="style.css" rel="stylesheet">
+
+
+  </head>
+  <body>
+	<div class="grid page-container"> 
+		<header class="page-header">
+			<nav class="site-navigation">
+				<div class="nav-btn">
+					&#8801;
+				</div>
+				<!--.nav-btn/end-->
+				<ul>
+					<li><a href="index.html">Naslovnica</a></li>
+					<li><a href="onama.html">O nama</a></li>
+					<li><a href="eko-turizam.html">Eko turizam</a></li>
+					<li><a href="kontakt.html">kontakt</a></li>
+				</ul>
+			</nav>
+			<!--.site-navigation/end-->
+			
+			<h1 class="site-title">avanturist</h1>
+		</header>
+		<!--.page-header/end-->
+		
+	<main class="primary">
+		<article class="page-content">
+			<h2 class="page-title">Kontakt</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mollis, leo ut dignissim mollis, libero magna auctor odio, id efficitur mauris dui et magna. Curabitur cursus augue purus, a condimentum erat sodales a. Suspendisse fermentum, elit ac blandit dictum, est risus sollicitudin eros, id aliquam eros neque vitae neque. Pellentesque a dui tristique, vestibulum felis sit amet, suscipit erat. Vivamus tempor sem diam, sit amet tincidunt mi feugiat tempor. Nam gravida faucibus orci ac tristique. Donec feugiat arcu eget velit tincidunt faucibus. Donec malesuada arcu accumsan, blandit ipsum eget, accumsan velit.</p>
+		<div class="grid kontakt-grid">
+			<div class="kontakt">
+				<p><strong>Adresa:</strong>Ulica Alana Forda</p>
+				<p><strong>Tel:</strong>&plus;385 987654321</p>
+				<p><strong>E-mail:</strong>info@avanturist.xyz</p>
+				<p><strong>Radno vrijeme:</strong>ponedjeljak-srijeda: 8.00-20.00</p>
+			</div>
+			<!--.kontakt/end-->
+			
+				<form name="kontakt-obrazac" action="" method="post" enctype="multipart/form-data" autocomplete="on" class="form">
+				
+					<label for="ime-prezime"> Ime i prezime</label> <br>
+					<input id="ime-prezime" name="ime-prezime" type="text"> <br>
+					<!--#ime-prezime/end-->
+				
+					<label for="mail">E-mail</label> <br>
+					<input id="mail" name="email" type="email"><br>
+					<!--#mail/end-->
+				
+					<label for="tema">Tema poruke</label><br>
+					<input id="tema" name="topic" type="text"><br>
+					<!--#tema/end-->
+				
+					<label for="poruka">Poruka</label><br>
+					<textarea id="poruka" name="message" rows="7"></textarea>					
+					<!--#poruka/end-->
+					
+					<input id="submit" name="submit_btn" type="submit" value="Pošalji poruku">
+				</form>
+			<!--form/end-->
+		</div>
+		<!--.kontakt-grid/end-->
+		
+		
+		</article>
+		<!--.page-content/end -->
+	</main>
+		
+		<aside class="secondary">
+			<div class="grid content-columns">
+				<ul>
+					<li><a href="#">lorem dolor amet</a></li>
+					<li><a href="#">lorem ipsum sit amet</a></li>
+					<li><a href="#">lorem ipsum amet</a></li>
+					<li><a href="#">lorem ipsum dolor sit amet</a></li>
+					<li><a href="#">lorem r sit amet</a></li>							
+				</ul>
+				
+				<ul>
+					<li><a href="#">lorem dolor amet</a></li>
+					<li><a href="#">lorem ipsum sit amet</a></li>
+					<li><a href="#">lorem ipsum amet</a></li>
+					<li><a href="#">lorem ipsum dolor sit amet</a></li>
+					<li><a href="#">lorem r sit amet</a></li>							
+				</ul>
+				<ul>
+					<li><a href="#">lorem dolor amet</a></li>
+					<li><a href="#">lorem ipsum sit amet</a></li>
+					<li><a href="#">lorem ipsum amet</a></li>
+					<li><a href="#">lorem ipsum dolor sit amet</a></li>
+					<li><a href="#">lorem r sit amet</a></li>							
+				</ul>
+				<ul>
+					<li><a href="#">lorem dolor amet</a></li>
+					<li><a href="#">lorem ipsum sit amet</a></li>
+					<li><a href="#">lorem ipsum amet</a></li>
+					<li><a href="#">lorem ipsum dolor sit amet</a></li>
+					<li><a href="#">lorem r sit amet</a></li>							
+				</ul>
+			</div>
+			<!--.grid content-columns/end-->
+		</aside>
+		<!--.secondary/end-->
+		
+		<footer class="page-footer">
+			<p>avanturist &copy; 2021.</p>
+		</footer>
+		<!--.page-footer/end-->
+	</div>	
+	<!--.page-container/end-->
+	
+	<!--JQUERY-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
+	<script>
+		$(".nav-btn").click(function(){
+			$(".site-navigation ul").slideToggle();
+		});
+	</script>	
+	
+
+  </body>
+</html>

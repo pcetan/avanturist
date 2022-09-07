@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="AnitaP">
+	
+    <title>O nama-AVANTURIST</title>
+	
+	<!--font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+	<!--font/end-->
+	
+	<link href="style.css" rel="stylesheet">
+
+
+  </head>
+  <body>
+	<div class="grid page-container"> 
+		<header class="page-header">
+			<nav class="site-navigation">
+				<div class="nav-btn">
+					&#8801;
+				</div>
+				<!--.nav-btn/end-->
+				<ul>
+					<li><a href="index.html">Naslovnica</a></li>
+					<li><a href="onama.html">O nama</a></li>
+					<li><a href="eko-turizam.html">Eko turizam</a></li>
+					<li><a href="kontakt.html">kontakt</a></li>
+				</ul>
+			</nav>
+			<!--.site-navigation/end-->
+			
+			<h1 class="site-title">avanturist</h1>
+		</header>
+		<!--.page-header/end-->
+		
+	<main class="primary">
+		<article class="page-content">
+		
+			    <h2 class="page-title">O nama</h2>
+				<video id="video" src="slike/video.mp4" autoplay muted loop> </video>
+				
+				<div class="grid banner">
+					<p>&quot;Do not follow where the path may lead. Go instead where there is no path and leave a trail&quot; – Ralph Waldo Emerson</p>
+		
+				</div>
+				<!--.banner/end-->
+				
+				
+			<div class="grid content-columns posts">
+				<section class="onama-section">
+					<h3>Lorem ipsum</h3>
+					<img src="slike/vlak.jpg" alt="putovanje_vlakom">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec tincidunt purus. Phasellus elementum porta congue. Aenean dictum commodo nulla, a porta risus. In sollicitudin tellus non nunc consequat feugiat. Proin imperdiet orci risus, mattis eleifend neque dignissim vel. Nam tincidunt viverra lacinia</p>
+				</section>
+				<section class="onama-section">
+					<h3>Lorem ipsum</h3>
+					<img src="slike/auto.jpg" alt="voznja_autom">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec tincidunt purus. Phasellus elementum porta congue. Aenean dictum commodo nulla, a porta risus. In sollicitudin tellus non nunc consequat feugiat. Proin imperdiet orci risus, mattis eleifend neque dignissim vel. Nam tincidunt viverra lacinia</p>
+				</section>
+			</div>
+			<!--.content-colums/end-->
+		</article>
+		<!--.page-content/end -->
+	</main>
+		
+		<aside class="secondary">
+			<div class="grid content-columns">
+				<ul>
+					<li><a href="#">lorem dolor amet</a></li>
+					<li><a href="#">lorem ipsum sit amet</a></li>
+					<li><a href="#">lorem ipsum amet</a></li>
+					<li><a href="#">lorem ipsum dolor sit amet</a></li>
+					<li><a href="#">lorem r sit amet</a></li>							
+				</ul>
+				
+				<ul>
+					<li><a href="#">lorem dolor amet</a></li>
+					<li><a href="#">lorem ipsum sit amet</a></li>
+					<li><a href="#">lorem ipsum amet</a></li>
+					<li><a href="#">lorem ipsum dolor sit amet</a></li>
+					<li><a href="#">lorem r sit amet</a></li>							
+				</ul>
+				<ul>
+					<li><a href="#">lorem dolor amet</a></li>
+					<li><a href="#">lorem ipsum sit amet</a></li>
+					<li><a href="#">lorem ipsum amet</a></li>
+					<li><a href="#">lorem ipsum dolor sit amet</a></li>
+					<li><a href="#">lorem r sit amet</a></li>							
+				</ul>
+				<ul>
+					<li><a href="#">lorem dolor amet</a></li>
+					<li><a href="#">lorem ipsum sit amet</a></li>
+					<li><a href="#">lorem ipsum amet</a></li>
+					<li><a href="#">lorem ipsum dolor sit amet</a></li>
+					<li><a href="#">lorem r sit amet</a></li>							
+				</ul>
+			</div>
+			<!--.grid content-columns/end-->
+		</aside>
+		<!--.secondary/end-->
+		
+		<footer class="page-footer">
+			<p>avanturist &copy; 2021.</p>
+		</footer>
+		<!--.page-footer/end-->
+	</div>	
+	<!--.page-container/end-->
+	
+	<!--JQUERY-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
+	<script>
+		$(".nav-btn").click(function(){
+			$(".site-navigation ul").slideToggle();
+		});
+	</script>
+  </body>
+</html>
